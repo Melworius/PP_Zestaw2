@@ -19,8 +19,6 @@ public class Zad1
 		{ 
 		System.out.println(i);	
 			liczba.close();
-		
-		
 		}
 			
 	}
