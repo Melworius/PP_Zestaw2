@@ -13,17 +13,18 @@ public class Zad2 {
 		System.out.println("Podaj dwie liczby ca³kowite, gdzie a<b: ");
 		int a;
 		int b;
-		int i = 0;
+		
 		Scanner liczba = new Scanner(System.in);
 		
 		a = liczba.nextInt();
 		b = liczba.nextInt();
 		
-		while(a<b) {
-			i = i+a;
-			a++;
+		while(true) {
+			
+			System.out.println((b+a)*(b-a+1)/2);
+			break;
 			}
-			System.out.println(i);
+			
 		liczba.close();
 	}
 }
