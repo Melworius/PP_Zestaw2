@@ -24,8 +24,6 @@ public class Zad2 {
 			a++;
 			}
 			System.out.println(i);
-			
-		
 		liczba.close();
 	}
 }
