@@ -5,26 +5,41 @@
 */
 
 import java.util.Scanner;
-
 public class Zad2 {
-
-	public static void main (String[] args) 
-	{
-		System.out.println("Podaj dwie liczby ca³kowite, gdzie a<b: ");
-		int a;
-		int b;
-		
-		Scanner liczba = new Scanner(System.in);
-		
-		a = liczba.nextInt();
-		b = liczba.nextInt();
-		
-		while(true) {
-			
-			System.out.println((b+a)*(b-a+1)/2);
-			break;
-			}
-			
-		liczba.close();
-	}
+    public static void main (String[] args){
+ 
+    	int A;
+    	int B;
+    	int wynik;
+    	
+        Scanner liczba = new Scanner(System.in);
+        System.out.println("Warunek poprawnego dzia³ania programu A<B");
+        System.out.println("Podaj liczbê A");
+        A = liczba.nextInt();
+        System.out.println("Podaj liczbê B");
+        B = liczba.nextInt();
+        
+        wynik = B;
+ 
+        while (A<B) {
+            wynik += A;
+            A ++;
+        }
+             System.out.println("Suma ci¹gu = " + wynik);
+            wynik = wynik - A;    
+ 
+         do {
+            wynik += A;
+            A ++;
+        } while (A<B);
+ 
+            System.out.println("Suma ci¹gu = " + wynik);
+ 
+         for (;A<B;A++) {
+            wynik += A;
+        }
+            System.out.println("Suma ci¹gu = " + wynik);
+            liczba.close();
+    }
+ 
 }
