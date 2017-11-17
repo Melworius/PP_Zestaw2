@@ -12,11 +12,33 @@
  * suma: 16
  * œrednia: 4
  */
+import java.util.Scanner;
 public class Zad5 {
 
 	public static void main(String[] args) {
+	
+		int a;
+		int max = Integer.MIN_VALUE;
+		int min = Integer.MAX_VALUE;
+		double mid;
+		int suma = 0;
+		Scanner liczba = new Scanner(System.in);
 		
-
+		do {
+			System.out.print("0 koñczy dzia³anie programu. Podaj liczbê ca³kowit¹: ");
+			a = liczba.nextInt();
+			if (a<min && a!=0) min = a;
+			if (a>max && a!=0) max = a;
+			mid = (min+max)/2;
+			suma += a;
+			} 
+		 while (a != 0);
+		System.out.println("Wartoœæ minimalna to: " + min);
+		System.out.println("Wartoœæ maksymalna to: " + max);
+		System.out.println("Suma to: " + suma);
+		System.out.println("Œrednia arytmetyczna to: " + mid);
+	
+		liczba.close();
 	}
 
 }
