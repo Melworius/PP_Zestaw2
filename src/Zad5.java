@@ -25,7 +25,7 @@ public class Zad5 {
 		Scanner liczba = new Scanner(System.in);
 		
 		do {
-			System.out.print("Podaj liczbê ca³kowit¹: ");
+			System.out.print("0 koñczy dzia³anie programu. Podaj liczbê ca³kowit¹: ");
 			a = liczba.nextInt();
 			if (a<min && a!=0) min = a;
 			if (a>max && a!=0) max = a;
