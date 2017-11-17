@@ -10,12 +10,26 @@ import java.util.Scanner;
 public class Zad6 {
 	public static void main(String[] args) {
 		int a;
+		int b = 1;
 		Scanner liczba = new Scanner(System.in);
-		
+		Random random = new Random();
+		b = random.nextInt(100);
 		do {
-			System.out.println("Podaj liczbê: ");
+			System.out.print("Podaj liczbê: ");
 			a = liczba.nextInt();
-			if ()
+			if (a == b) {
+				System.out.println("Gratulacje");
+				break;
+				
+			} else if(a>b){
+				System.out.println("Poda³eœ za du¿¹ wartoœæ");
+				
+			} else {
+				System.out.println("Poda³eœ za ma³¹ wartoœæ");
+				
+			}
+				
+			
 		}
 		while (a>=1 && a<=100);
 		liczba.close();
